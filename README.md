@@ -1,7 +1,7 @@
 # BMSC_evaluacion
 ## Requirements
   - pipenv
-el archivo server.py es el que contiene la configuracion del puerto,
+-el archivo server.py es el que contiene la configuracion del puerto,
 debe cambiarlo si el puerto asignado esta ocupado
 Se debe iniciar primeramente el entorno virtual con el siguiente comando
 ```sh 
