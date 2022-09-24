@@ -39,28 +39,20 @@
 <table class="styled-table">
   <tr>
     <th>Descripcion</th>
-    <th>Tarea</th>
-    <th>Usuario</th>
-    <th>Fecha Inicio</th>
-    <th>Hora Inicio</th>
-    <th>Fecha Fin</th>
-    <th>Hora Fin</th>
     <th>Duracion</th>
+    <th>Fecha Inicio</th>
+    <th>Fecha Fin</th>
   </tr>
   {% for item in items %}
   <tr>
     <td>{{ item.description }}</td>
-    <td>{{ item.tarea }}</td>
-    <td> {{ item.salario }}</td>
-    <td>{{ item.salario }}</td>
-    <td>{{ item.inicio }}</td>
-    <td>{{ item.fin }}</td>
-    <td>{{ item.hfin }}</td>
-    <td>{{ item.duracion }}</td>
+    <td>{{ item.duration }}</td>
+    <td>{{ item.start }}</td>
+    <td>{{ item.stop }}</td>
   </tr>
-
-
-
   {% endfor %}
+
+
+
 </table>
 <button> Generar Excel</button>
