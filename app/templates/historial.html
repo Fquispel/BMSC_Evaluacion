@@ -38,7 +38,7 @@
 
 <table class="styled-table">
   <tr>
-    <th>Nombre Proyecto</th>
+    <th>Descripcion</th>
     <th>Tarea</th>
     <th>Usuario</th>
     <th>Fecha Inicio</th>
@@ -47,16 +47,20 @@
     <th>Hora Fin</th>
     <th>Duracion</th>
   </tr>
-
+  {% for item in items %}
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>{{ item.description }}</td>
+    <td>{{ item.tarea }}</td>
+    <td> {{ item.salario }}</td>
+    <td>{{ item.salario }}</td>
+    <td>{{ item.inicio }}</td>
+    <td>{{ item.fin }}</td>
+    <td>{{ item.hfin }}</td>
+    <td>{{ item.duracion }}</td>
   </tr>
+
+
+
+  {% endfor %}
 </table>
 <button> Generar Excel</button>
