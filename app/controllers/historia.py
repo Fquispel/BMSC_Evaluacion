@@ -26,4 +26,5 @@ def listarHistorial():
     return jsonify(timeEntries),200
 
 #Exportar a Excel
+exportExcel = ("https://api.track.toggl.com/reports/api/v2/details?user_agent=ferquispe.l@gmail.com&workspace_id=6723111&since=2022-09-20&until=until=2022-09-24&")
 # r1 = toggl.get("https://api.track.toggl.com/reports/api/v8/details?workspace_id=6723111&since=2022-09-20 &until=2022-09-24 &user_agent=api_test")
