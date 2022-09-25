@@ -51,8 +51,7 @@
     <td>{{ item.stop }}</td>
   </tr>
   {% endfor %}
-
-
-
 </table>
-<button> Generar Excel</button>
+<form action="download" method="POST">
+<button name="reportebtn" type="submit"> Generar Excel</button>
+</form>
